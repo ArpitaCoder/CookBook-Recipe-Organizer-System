@@ -1,0 +1,67 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: #0c8e7f0e;
+}
+header{
+    display:flex;
+    padding-top:2px;
+    background-color: #0c8e7f;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2px;
+}
+.img{
+    display:flex;
+}
+header img{
+    width: 40px;
+    padding-left: 10px;
+    height: 50px;
+}
+header h1{
+    font-size: 22px;
+    padding-left: 15px;
+    color: #ffffff;
+    text-decoration: none; 
+    align-items: center;
+    display: flex;   
+}
+.taskbar{
+    display: flex;
+    text-align: center;
+    font-size: 19px;
+    text-align: end;
+    justify-content: center;
+    width: 90%;
+    padding-top:10px;
+    font-family:sans-serif ;
+    padding-right: 30px;
+}
+.taskbar a{
+    text-decoration:none;
+    color:#ffffff;
+    text-transform: uppercase;
+    padding-left: 28px;
+}
+header .log{
+    display: flex;
+    margin-right: 20px;
+
+}
+header button{
+    width: 90px;
+    border: 1px solid rgb(30, 27, 27); 
+    background-color: #e8efee34;
+    border: 2px;
+    border-radius: 20px;
+    color: white;
+    height: 38px;
+    padding: 2px;
+    margin: 5px;
+}
