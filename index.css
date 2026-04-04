@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #0c8e7f0e;
+    background-color:#edf6f9;
 }
 header{
     display:flex;
     padding-top:2px;
-    background-color: #0c8e7f;
+    background-color:
+    #036666;
     position: fixed;
     z-index: 1000;
     width: 100%;
