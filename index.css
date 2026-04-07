@@ -5,6 +5,8 @@
 }
 body{
     background-color:#edf6f9;
+    font-family: sans-serif;
+    
 }
 header{
     display:flex;
@@ -86,3 +88,106 @@ header button{
     font-size: 17px;
     cursor: pointer;
 }
+article {
+   padding-top: 40px;
+   background-color: #3d52d95f;
+   width:100% ;
+   height:630px;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color: #ffffff;
+   
+}
+article h1{
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+article .p1{
+    font-size: 27px;
+    
+}
+article .p2{
+    font-size: 20px;
+}
+article input{
+    width: 300px;
+    padding: 5px;
+    padding-left: 38px;
+    border-radius: 20px;
+    border: 1px solid black;
+    
+    margin: 20px;
+    font-size: 15px;
+}
+article i {
+    position: absolute;
+    left: 628px;
+    top: 417px;
+    transform: translateY(-50%);
+    color: #777;
+}
+.menu h2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin: 30px;
+    text-transform: uppercase;
+}
+.menu_bar {
+    display: flex;
+    justify-content: center;
+}
+.menu_bar button{
+    margin: 6px;
+    padding: 6px 22px;
+    font-size: 15px;
+    border: none;
+    font-size: 20px;
+    background-color: #5a0e0e12;
+    cursor: pointer;
+}
+.menu_bar button:hover{
+    background-color: #03666684;
+    color: #000000;
+    transition: 0.4s;
+}
+.menu_bar button:focus{
+    background-color: #036666;
+    color: #ffffff;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+.recipes{
+    display: flex;
+    justify-content: center;
+    width: full;
+    height: 100vh;
+    margin: 40px;
+}
+.recipes .rec{
+    width: 37%;
+    height: 40%;
+    margin: 30px;
+    cursor: pointer;
+    
+}
+.recipes .rec .r_menu{
+    background-color: #07ecec95;
+    width: 100%;
+    height: 80%;
+    border-radius: 30px;
+}
+.recipes h3{
+    color: #000000;
+    font-size: 30px;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    font-weight: 500;
+}
+.recipes p{
+    font-size: 15px;
+}
+
