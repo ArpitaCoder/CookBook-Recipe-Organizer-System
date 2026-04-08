@@ -6,16 +6,18 @@
     <title>CookBook</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="recipe.css">
 </head>
 <body>
-    <header>
+    <a name="home"></a>
+     <header>
         <div class="img">
             <img src="img/R.jpg" alt="This is an image">
             <h1>CookBook</h1>
         </div>
         <div class="taskbar">
             <a href="#home">home</a>
-            <a href="about.html">about</a>
+            <a href="#recipes">recipes</a>
             <select name="cuisines" id="cuisines">
                 <option value="--">CUISINES</option>
                 <option value="indian">Indian</option>
@@ -25,53 +27,154 @@
                 <option value="beverages">Beverages</option>
                 <option value="desserts">Desserts</option>
             </select>
-            <a href="#contact">contact</a>
+            <a href="#">contact</a>
         </div>
         <div class="log">
-            <Button>LogIn</Button>
-            <Button>SignIn</Button>
+            <Button onclick="showLogIn()">LogIn</Button>
+            <button onclick="showSignIn()" >SignIn</button>
         </div>
     </header>
-    <article>
+    <article >
         <img src="img/thali3.png" height="100%" width="100%">
         <div class="Disc">      
         <h1>CookBook</h1>
         <p class="p1">Discover delicious recipes made for every taste. <br>
-Search, cook, and enjoy every bite.</p> 
-    <i class="fa fa-search"></i>
+        Search, cook, and enjoy every bite.</p> 
+        <i class="fa fa-search"></i>
+        
         <input type="text" name="" id="" placeholder="Find your next favorite recipe…">
         </div>
+        
+         
     </article>
-
+   
     <div class="menu">
-        <h2>Recipes</h2>
+        
+        <div class="R_title">
+            <span class="line"></span>    
+            <span class="h2">Recipes</span> 
+            <span class="line"></span>
+        </div>    
         <div class="menu_bar">
-        <button id="indian">Indian</button>
-        <button id="chinese">Chinese</button>
-        <button id="italian">Italian</button>
-        <button id="rice">Rice & Naan</button>
-        <button id="beverages">Beverages</button>
-        <button id="desserts">Desserts</button>
-    </div>
+            <button id="indian">Indian</button>
+            <button id="chinese">Chinese</button>
+            <button id="italian">Italian</button>
+            <button id="rice">Rice & Naan</button>
+            <button id="beverages">Beverages</button>
+            <button id="desserts">Desserts</button>
+        </div>
     </div>
     <div class="recipes">
         <div class="rec">
-            <div class="r_menu" id="rec1"></div>
-            <h3>Palak Chole</h3>
+            <div class="r_menu" id="rec1">
+                <img src="img/dalMakhni.jfif" alt=""></div>
+            <h3>Dal Makhani</h3>
+            <p>By Arpita Sharma</p>
+        </div>
+        <div class="rec">
+            <div class="r_menu" id="rec1">
+                <img src="img/paneer.jpg" alt=""></div>
+            <h3>Paneer Butter Masala</h3>
+            <p>By Aman </p>
+        </div>
+        <div class="rec">
+            <div class="r_menu" id="rec1">
+                <img src="img/jeera.jfif" alt=""></div>
+            <h3>Jeera Rice</h3>
+            <p>By Sayma</p>
+        </div>
+    </div>
+    <div class="recipes">
+        <div class="rec">
+            <div class="r_menu" id="rec1">
+                <img src="img/rajma.jfif" alt=""></div>
+            <h3>Rajma Chawal</h3>
             <p>By Khushi</p>
         </div>
         <div class="rec">
-            <div class="r_menu" id="rec2"></div>
-            <h3>Palak Chole</h3>
-            <p>By Khushi</p>
+            <div class="r_menu" id="rec1">
+                <img src="img/tandoori.jfif" alt=""></div>
+            <h3>Tandoori Roti</h3>
+            <p>By Arpita</p>
         </div>
         <div class="rec">
-            <div class="r_menu" id="rec3"></div>
-            <h3>Palak Chole</h3>
-            <p>By Khushi</p>
+            <div class="r_menu" id="rec1">
+                <img src="img/rasmalai.jfif" alt=""></div>
+            <h3>Rasmalai (2 pcs)</h3>
+            <p>By Sanjana Kumari</p>
         </div>
-    </div> 
-    
+    </div>
+     <div class="contact">
+        <section>
+            <div class="container">
+                <a name="contact"></a>
+                <div class="contactInfo">
+                    <h4>Contact Info</h4>
+                    <h3>Location</h3>
+                    <p>4/564 Deshmesh Colony,Opp Centeral Bank,Pathankot</p>
+                    <h3>Booking Request</h3>
+                    <p>787-652-4315</p>
+                    <h3>Timing</h3>
+                    <p>Monday to Sunday</p>
+                    <p>11:00am - 10:30pm </p>
+
+
+                </div>
+                <div class="contactForm">
+                    <h4>Send us a Message</h4>
+                    <p>if you have any type of quries related to our restraunt,you can send us a message from here.It's our pleasure to help you. </p>
+                    <form>
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="text"placeholder="Enter Your Email Address" >
+                    <textarea rows="3" placeholder="Write your Message"></textarea>
+                    <br> 
+                    <button onclick="send()">Send Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+<div class="logIn" id="logIn">
+        <i onclick="closebtn()" class="fa-solid fa-xmark"></i>
+        <div class="logIn_disc">
+            <h4>Create Your Account</h4>
+            <p  class="p1">Enter your credentials to access your account</p>
+            <form action="">
+                    <p>Full Name</p>
+                    <input type="text" placeholder="Enter Your name" id="">
+                    <input type="date" name="" id="">
+                    <p>Email Address</p>
+                    <input type='email' placeholder='***@example.com' required  />
+                    <p >Password</p>
+                    <input type='password'  placeholder='Enter Password' required  />
+                    <button >Sign In</button> 
+                    <p class="create" >Already Have an Account? <span id="open" onclick="openSignIn()">Sign In</span> 
+                    </p>
+                </form>
+        </div>
+        
+    </div>
+
+
+
+    <div class="signIn" id="signIn">
+        <i onclick="closebtn()" class="fa-solid fa-xmark"></i>
+        <div class="signIn_disc">
+            <h4>Sign In</h4>
+                
+                    <p  class="p1">Enter your credentials to access your account</p>
+                    <form action="">
+                        <p>Email Address</p>
+                        <input type='email' placeholder='***@example.com' required  />
+                        <p >Password</p>
+                        <input type='password'  placeholder='Enter Password' required  />
+                        <button >Sign In</button> 
+                        <p class="create" >Don't have an account? <span onclick="openLogIn()">Create one</span> 
+                        </p>
+                    </form>
+        </div>
+        
+    </div>
     
 </body>
+<script src="script.js"></script>
 </html>
