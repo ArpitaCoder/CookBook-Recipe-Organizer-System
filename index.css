@@ -8,6 +8,7 @@ html, body {
      /* background-color:#edf6f9; */
     font-family: sans-serif;
   overscroll-behavior: none; 
+   scroll-behavior: smooth;
 }
 header{
     display:flex;
@@ -143,7 +144,9 @@ article i {
     transform: translateY(-50%);
     color: #777;
 }
-
+.menu a{
+    scroll-margin-top: 40px; 
+}
 
 .menu .R_title{
     display: flex;
@@ -166,6 +169,12 @@ article i {
     justify-content: center;
     margin: 2px 6%;
 }
+/* .menu_bar a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 22px;
+    margin: 6px;
+} */
 .menu_bar button{
     margin: 6px;
     padding: 6px 22px;
@@ -238,7 +247,7 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    background: linear-gradient(to right,#fee9e1 50%,#036666 50%);
+    background: linear-gradient(to right,#0366663a 50%,#036666 50%);
 }
 .container{
     position: relative;
