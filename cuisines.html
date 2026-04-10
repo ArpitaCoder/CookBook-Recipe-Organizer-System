@@ -9,17 +9,14 @@
 </head>
 <body>
     <div class="container">
-
     <div class="sidebar">
         <div>
             <div class="logo">
                 <span class="white">Cook</span><span class="blue">Book</span>
             </div>
-
             <hr>
-
             <div class="menu">
-                <p class="heading">Categories</p>
+                <p class="heading" id="heading">Categories</p>
                 <button id="indian">Indian</button>
                 <button id="chinese">Chinese</button>
                 <button id="italian">Italian</button>
@@ -28,75 +25,118 @@
                 <button id="desserts">Desserts</button>
             </div>
         </div>
-
         <div class="s_footer">
             <hr>
             <div class="profile">
                 <div class="icon"><i class="fa-solid fa-user"></i></div>
                 <div>
-                    <p class="name">Sign In</p>
+                    <p class="name">Arpita Sharma</p>
                 </div>
                 <div class="home-btn">
-                    <a href="index.html">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </a>
+                    <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
     <article class="content">
+        <div id="normalPage">
         <h1 ><span class="I" id="I">I</span><span id="content">ndian</span></h1>
         <div class="recipes">
-        <div class="rec">
+        <div class="rec recipe-item" data-name="dal">
             <div class="r_menu">
-                <img id="img1" src="img/dalMakhni.jfif" alt=""></div>
-            <h3 id="title1">Dal Makhani</h3>
-            <p id="disc1">By Arpita Sharma</p>
+                <img id="img1" src="" alt="This ia an Image">
+            </div>
+            <h3 id="title1" ></h3>
+            <p id="disc1"></p>
         </div>
-        <div class="rec">
+        <div class="rec recipe-item" data-name="paneer">
             <div class="r_menu">
-                <img id="img2" src="img/paneer.jpg" alt=""></div>
-            <h3 id="title2">Paneer Butter Masala</h3>
-            <p id="disc2">By Aman </p>
+                <img id="img2" src="" alt="This is an Image">
+            </div>
+            <h3 id="title2"></h3>
+            <p id="disc2"></p>
         </div>
-        <div class="rec">
-            <div class="r_menu" >
-                <img id="img3" src="img/jeera.jfif" alt=""></div>
-            <h3 id="title3">Jeera Rice</h3>
-            <p id="disc3">By Sayma</p>
-        </div>
-        <div class="rec">
-            <div class="r_menu" >
-                <img id="img4" src="img/jeera.jfif" alt=""></div>
-            <h3 id="title4">Jeera Rice</h3>
-            <p id="disc4">By Sayma</p>
-        </div>
-        <div class="rec">
-            <div class="r_menu" >
-                <img id="img5" src="img/rajma.jfif" alt=""></div>
-            <h3 id="title5">Rajma Chawal</h3>
-            <p id="disc5">By Khushi</p>
-        </div>
-        <div class="rec">
-            <div class="r_menu" >
-                <img id="img6" src="img/tandoori.jfif" alt=""></div>
-            <h3 id="title6">Tandoori Roti</h3>
-            <p id="disc6">By Arpita</p>
-        </div>
-        <div class="rec">
+
+        <div class="rec recipe-item" data-name="jeera">
             <div class="r_menu">
-                <img id="img7" src="img/rasmalai.jfif" alt=""></div>
-            <h3 id="title7">Rasmalai (2 pcs)</h3>
-            <p id="disc7">By Sanjana Kumari</p>
+                <img id="img3" src="" alt="This is an Image">
+            </div>
+            <h3 id="title3"></h3>
+            <p id="disc3"></p>
         </div>
+
+        <div class="rec recipe-item" data-name="rajma">
+            <div class="r_menu">
+                <img id="img4" src="" alt="This is an Image">
+            </div>
+            <h3 id="title4"></h3>
+            <p id="disc4"></p>
+        </div>
+
+        <div class="rec recipe-item" data-name="roti">
+            <div class="r_menu">
+                <img id="img5" src="" alt="This is an Image">
+            </div>
+            <h3 id="title5"></h3>
+            <p id="disc5"></p>
+        </div>
+
+        <div class="rec recipe-item" data-name="rasmalai">
+            <div class="r_menu">
+                <img id="img6" src="" alt="This is an Image">
+            </div>
+            <h3 id="title6"></h3>
+            <p id="disc6"></p>
+        </div>
+        <div class="rec recipe-item" data-name="rasmalai">
+            <div class="r_menu">
+                <img id="img7" src="" alt="This is an Image">
+            </div>
+            <h3 id="title7"></h3>
+            <p id="disc7"></p>
+        </div>
+        </div>
+    </div>
+        </div>
+        <div class="recDetails" id="recDetails">
+        <img id="detailImg" src="img/dalMakhni.jfif" alt="">
+        <h1>
+            <span class="I" id="I">D</span><span id="content">al Makhani</span>
+        </h1>
+
+        <p id="desc"></p>
+
+        <p>
+            <i class="fa-solid fa-circle-user"></i>
+            <span>By </span><span id="author">Arpita Sharma</span>
+            <span class="span">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span id="date">02-12-2022</span>
+            </span>
+        </p>
+
+        <div class="ingrediants">
+            <h3>Ingredients</h3>
+            <ul id="ingredientsList"></ul>
+        </div>
+
+        <div class="method">
+            <h3>Method</h3>
+            <ol id="methodList"></ol>
+        </div>
+
     </div>
     </article>
 
 </div>
+
+
     
 
 </div>
 </body>
 <script src="cuisines.js"></script>
+<script src="recDetails.js"></script>
 </html>

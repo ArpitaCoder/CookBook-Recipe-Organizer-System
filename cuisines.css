@@ -8,10 +8,10 @@ html, body {
     font-family: sans-serif;
   overscroll-behavior: none; 
 }
-
 .sidebar {
     width: 240px;
     height: 100vh;
+    /* display:none; */
     background-color: #036666fa;
     border-right: 1px solid #ffffff71;
     position: fixed;
@@ -124,6 +124,7 @@ article{
     margin: 3%;
     margin-left: 20%;
 }
+
 article h1{
     font-size: 39px;
 }
@@ -136,21 +137,18 @@ article .I{
     gap: 30px;
     margin: 20px 0px;
 }
-
 .recipes .rec {
     overflow: hidden;
     text-align: left;
     cursor: pointer;
     
 }
-
 .recipes .r_menu {
     width: 100%;
     height: 220px;
     overflow: hidden;
     
 }
-
 .recipes .r_menu img {
     width: 100%;
     height: 100%;
@@ -159,7 +157,6 @@ article .I{
 
 
 }
-
 .recipes h3 {
     margin: 10px 15px 5px;
     color: #000000;
@@ -168,9 +165,53 @@ article .I{
     padding-bottom: 2px;
     font-weight: 500;
 }
-
 .recipes p {
     margin: 0 15px 15px;
     font-size: 15px;
     color: gray;
+}
+.recDetails{
+    display: none;
+}
+Article .recDetails p{
+    padding-top: 10px;
+    
+}
+Article .recDetails p i{
+    padding-right: 5px;
+    font-size:20px ;
+}
+article .recDetails p .span{
+    padding-left: 30px;
+    color: #00000078;
+}
+article .recDetails p span{
+    /* padding-left: 30px; */
+    color: #00000078;
+}
+
+.recDetails img{
+    float: right;
+    object-fit: cover;
+      border-radius: 20px;
+      width: 340px;
+      height: 230px;
+      margin-right: 10%;
+}
+article .recDetails li,.recDetails .method ol li{
+    color:#000000d1;
+}
+article .recDetails .ingrediants h3,.method h3{
+    font-size: 32px;
+    padding-top: 19px;
+}
+article .recDetails .ingrediants ul{
+    /* font-size: 34px; */
+    padding: 18px;
+}
+article .recDetails .method ol{
+    padding: 22px;
+}
+article .recDetails .method li{
+    font-size: 20px;
 }

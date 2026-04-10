@@ -28,16 +28,46 @@ let disc5 = document.getElementById("disc5");
 let disc6 = document.getElementById("disc6");
 let disc7 = document.getElementById("disc7");
 
+
+function indianClick(){
+    content.innerText = "ndian";
+    I.innerText = "I";
+    normalPage.style.display = "block";
+    recDetails.style.display = "none";
+    img1.src="img/dalMakhni.jfif";
+    img2.src="img/paneer.jpg";
+    img3.src="img/gobi.jpg";
+    img4.src="img/chole.jfif";
+    img5.src="img/rajma.jfif";
+    img6.src="img/mashroom.webp";
+    img7.src="img/malai kofta1.jpg";
+    title1.innerText = "Dal Makhani";
+    title2.innerText = "Paneer Butter Masala";
+    title3.innerText = "Aloo Gobi";
+    title4.innerText = "Chole Bhature";
+    title5.innerText = "Rajma Chawal";
+    title6.innerText = "Mushroom Curry";
+    title7.innerText = "Malai Kofta";
+    disc1.innerText = "By Arpita Sharma";
+    disc2.innerText = "By Aman";
+    disc3.innerText = "By Sayma";
+    disc4.innerText = "By Sayma";
+    disc5.innerText = "By Khushi";
+    disc6.innerText = "By Arpita";
+    disc7.innerText = "By Sanjana Kumari";
+}
 function chineseClick(){
     content.innerText="hinese";
     I.innerText="C";
+    normalPage.style.display = "block";
+    recDetails.style.display = "none";
     img1.src="img/manchu.jfif";
-    img2.src="img/shezwan.jfif";
-    img3.src="img/pasta.jfif";
-    img4.src="img/manchu.jfif";
-    img5.src="img/manchu.jfif";
-    img6.src="img/manchu.jfif";
-    img7.src="img/manchu.jfif";
+    img2.src="img/Hakkanoodles.jpg";
+    img3.src="img/chili.jfif";
+    img4.src="img/ve.webp";
+    img5.src="img/spring.jfif";
+    img6.src="img/shezwan.jfif";
+    img7.src="img/ch.webp";
     title1.innerText = "Veg Manchurian";
     title2.innerText = "Hakka Noodles";
     title3.innerText = "Chilli Paneer";
@@ -53,45 +83,19 @@ function chineseClick(){
     disc6.innerText = "By Chef Simran Kaur";
     disc7.innerText = "By Arjun Singh";
 }
-function indianClick(){
-    content.innerText = "ndian";
-    I.innerText = "I";
 
-    img1.src="img/dalMakhni.jfif";
-    img2.src="img/paneer.jpg";
-    img3.src="img/jeera.jfif";
-    img4.src="img/jeera.jfif";
-    img5.src="img/rajma.jfif";
-    img6.src="img/tandoori.jfif";
-    img7.src="img/rasmalai.jfif";
-
-    title1.innerText = "Dal Makhani";
-    title2.innerText = "Paneer Butter Masala";
-    title3.innerText = "Jeera Rice";
-    title4.innerText = "Jeera Rice";
-    title5.innerText = "Rajma Chawal";
-    title6.innerText = "Tandoori Roti";
-    title7.innerText = "Rasmalai (2 pcs)";
-
-    disc1.innerText = "By Arpita Sharma";
-    disc2.innerText = "By Aman";
-    disc3.innerText = "By Sayma";
-    disc4.innerText = "By Sayma";
-    disc5.innerText = "By Khushi";
-    disc6.innerText = "By Arpita";
-    disc7.innerText = "By Sanjana Kumari";
-}
 function italianClick(){
     content.innerText = "talian";
     I.innerText = "I";
-
+    normalPage.style.display = "block";
+    recDetails.style.display = "none";
     img1.src="img/pasta.jfif";
     img2.src="img/pizza.jfif";
-    img3.src="img/lasagna.jfif";
-    img4.src="img/spaghetti.jfif";
+    img3.src="img/lasagne.jfif";
+    img4.src="img/spa.webp";
     img5.src="img/risotto.jfif";
-    img6.src="img/garlicbread.jfif";
-    img7.src="img/tiramisu.jfif";
+    img6.src="img/bread with cheese.jfif";
+    img7.src="img/ti.webp";
 
     title1.innerText = "White Sauce Pasta";
     title2.innerText = "Margherita Pizza";
@@ -112,22 +116,23 @@ function italianClick(){
 function riceClick(){
     content.innerText = "ice and Naan";
     I.innerText = "R";
-
+    normalPage.style.display = "block";
+    recDetails.style.display = "none";
     img1.src="img/jeera.jfif";
-    img2.src="img/friedrice.jfif";
-    img3.src="img/biryani.jfif";
-    img4.src="img/pulao.jfif";
-    img5.src="img/lemonrice.jfif";
-    img6.src="img/curdrice.jfif";
-    img7.src="img/vegfriedrice.jfif";
+    img2.src="img/butternaan.jfif";
+    img3.src="img/biriani.jfif";
+    img4.src="img/pul.webp";
+    img5.src="img/lemonrice.webp";
+    img6.src="img/tandoori.jfif";
+    img7.src="img/garlicnaan.jfif";
 
     title1.innerText = "Jeera Rice";
-    title2.innerText = "Veg Fried Rice";
+    title2.innerText = "Butter Naan";
     title3.innerText = "Veg Biryani";
     title4.innerText = "Pulao";
     title5.innerText = "Lemon Rice";
-    title6.innerText = "Curd Rice";
-    title7.innerText = "Schezwan Fried Rice";
+    title6.innerText = "Tandoori Roti";
+    title7.innerText = "Garlic Naan";
 
     disc1.innerText = "By Arjun Singh";
     disc2.innerText = "By Chef Kunal";
@@ -140,14 +145,15 @@ function riceClick(){
 function beveragesClick(){
     content.innerText = "everages";
     I.innerText = "B";
-
-    img1.src="img/lassi.jfif";
-    img2.src="img/coldcoffee.jfif";
-    img3.src="img/mojito.jfif";
-    img4.src="img/tea.jfif";
-    img5.src="img/juice.jfif";
-    img6.src="img/milkshake.jfif";
-    img7.src="img/smoothie.jfif";
+    normalPage.style.display = "block";
+    recDetails.style.display = "none";
+    img1.src="img/las.webp";
+    img2.src="img/coffee.jfif";
+    img3.src="img/virmoji.jfif";
+    img4.src="img/chai.jfif";
+    img5.src="img/detox.webp";
+    img6.src="img/choko.webp";
+    img7.src="img/fruit.webp";
 
     title1.innerText = "Sweet Lassi";
     title2.innerText = "Cold Coffee";
@@ -168,20 +174,21 @@ function beveragesClick(){
 function dessertsClick(){
     content.innerText = "esserts";
     I.innerText = "D";
-
-    img1.src="img/gulabjamun.jfif";
-    img2.src="img/rasgulla.jfif";
+    normalPage.style.display = "block";
+    recDetails.style.display = "none";
+    img1.src="img/jamun.jfif";
+    img2.src="img/ras.jpg";
     img3.src="img/icecream.jfif";
     img4.src="img/brownie.jfif";
-    img5.src="img/cake.jfif";
-    img6.src="img/kheer.jfif";
-    img7.src="img/halwa.jfif";
+    img5.src="img/rasmalai.jfif";
+    img6.src="img/kheer1.jpg";
+    img7.src="img/gajar ka halwa.jfif";
 
     title1.innerText = "Gulab Jamun";
     title2.innerText = "Rasgulla";
     title3.innerText = "Ice Cream";
     title4.innerText = "Chocolate Brownie";
-    title5.innerText = "Cake";
+    title5.innerText = "Rasmalai (2 pcs)";
     title6.innerText = "Kheer";
     title7.innerText = "Gajar Halwa";
 
@@ -203,9 +210,8 @@ rice.addEventListener("click",riceClick);
 beverages.addEventListener("click",beveragesClick);
 desserts.addEventListener("click",dessertsClick);
 window.onload = function(){
-
     let cuisine = localStorage.getItem("cuisine");
-
+ 
     if(cuisine === "indian"){
         indianClick();
     }
