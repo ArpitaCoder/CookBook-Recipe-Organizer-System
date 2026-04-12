@@ -12,6 +12,7 @@ header{
     display:flex;
     padding-top:2px;
     position: fixed;
+    background-color: #ffffffcd;
     z-index: 1000;
     width: 84%;
     left:16%;
