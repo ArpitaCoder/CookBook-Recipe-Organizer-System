@@ -19,7 +19,8 @@ let title2 = document.getElementById("title2");
 let title3 = document.getElementById("title3");
 let title4 = document.getElementById("title4");
 let title5 = document.getElementById("title5");
-let title6 = document.getElementById("title6");let title7 = document.getElementById("title7");
+let title6 = document.getElementById("title6");
+let title7 = document.getElementById("title7");
 let disc1 = document.getElementById("disc1");
 let disc2 = document.getElementById("disc2");
 let disc3 = document.getElementById("disc3");
@@ -209,9 +210,9 @@ italian.addEventListener("click",italianClick);
 rice.addEventListener("click",riceClick);
 beverages.addEventListener("click",beveragesClick);
 desserts.addEventListener("click",dessertsClick);
+
 window.onload = function(){
     let cuisine = localStorage.getItem("cuisine");
- 
     if(cuisine === "indian"){
         indianClick();
     }
@@ -230,5 +231,4 @@ window.onload = function(){
     else if(cuisine === "desserts"){
         dessertsClick();
     }
-
 }
