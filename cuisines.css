@@ -43,7 +43,6 @@ header h1{
     color: #036666ba;
     text-transform: uppercase;
     padding-left: 26px;
-    
     background: transparent;  
     border: none;
     outline: none;
@@ -51,18 +50,9 @@ header h1{
     cursor: pointer;
     appearance: none;
 }
-.taskbar a:hover,.taskbar select:hover {
+.taskbar a:hover{
     text-decoration: underline;
     color: #036666;
-}
-.taskbar #cuisines{
-    width: 110px;
-}
-
-.taskbar select option {
-    background: white;
-    color: black;
-    font-size: 14px;
 }
 header .log{
     display: flex;
