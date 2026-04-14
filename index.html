@@ -176,7 +176,21 @@
         </div>
         
     </div>
-    
+    <div onclick="showLogIn()" class="addRecipeBtn"><i class="fa-solid fa-plus"></i></div>
+    <div class="addRecipe">
+        <div class="addRecipe_disc">
+            <h2>Add New Recipe</h2>
+            <form action="addRecipe.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="dishName" placeholder="Dish Name" required>
+            <textarea name="description" placeholder="Short Description" required></textarea>
+            <textarea name="ingredients" placeholder="Ingredients (comma separated)" required></textarea>
+            <textarea name="method" placeholder="Cooking Method" required></textarea>
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit">Add Recipe</button>
+        </form>
+
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 <script src="login&SignIn.js"></script>

@@ -279,3 +279,14 @@ article .recDetails .method ol{
 article .recDetails .method li{
     font-size: 20px;
 }
+.addRecipeBtn i{
+    position: fixed;
+    top: 88%;
+    left: 91%;
+    font-size: 35px;
+    background-color: #036666;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
