@@ -6,6 +6,7 @@
     <title>CookBook</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="addRecipe.css">
     <link rel="stylesheet" href="login&SignIn.css">
 </head>
 <body>
@@ -176,16 +177,20 @@
         </div>
         
     </div>
-    <div onclick="showLogIn()" class="addRecipeBtn"><i class="fa-solid fa-plus"></i></div>
-    <div class="addRecipe">
-        <div class="addRecipe_disc">
-            <h2>Add New Recipe</h2>
+    <div  class="addRecipeBtn">
+        <i onclick="AddRecipe()" class="fa-solid fa-plus"></i></div>
+    <div class="addRecipe" id="addRecipe">
+        <div class="addRecipe_disc" >
+            <i onclick="closebtn()" class="fa-solid fa-xmark"></i>
+            <!-- <h2>Add New Recipe</h2> -->
             <form action="addRecipe.php" method="POST" enctype="multipart/form-data">
+             <input type="file" id="fileUpload" hidden>
+<label for="fileUpload" class="upload-btn">Upload Image</label>
             <input type="text" name="dishName" placeholder="Dish Name" required>
             <textarea name="description" placeholder="Short Description" required></textarea>
             <textarea name="ingredients" placeholder="Ingredients (comma separated)" required></textarea>
             <textarea name="method" placeholder="Cooking Method" required></textarea>
-            <input type="file" name="image" accept="image/*" required>
+            
             <button type="submit">Add Recipe</button>
         </form>
 

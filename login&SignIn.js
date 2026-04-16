@@ -7,6 +7,7 @@ function showLogIn(){
 function closebtn(){
     document.getElementById("signIn").style.display = "none";
     document.getElementById("logIn").style.display = "none";
+    document.getElementById("addRecipe").style.display = "none";
 }
 function openSignIn(){
     document.getElementById("logIn").style.display = "none";
@@ -15,4 +16,7 @@ function openSignIn(){
 function openLogIn(){
     document.getElementById("logIn").style.display = "flex";
     document.getElementById("signIn").style.display = "none";
+}
+function AddRecipe(){
+    document.getElementById("addRecipe").style.display = "block";
 }
