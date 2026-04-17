@@ -1,0 +1,95 @@
+.menu a{
+    scroll-margin-top: 40px; 
+}
+
+.menu .R_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .line{
+    width: 13%;
+    height: 3px; 
+    background: #242021;
+    border-radius: 5px;
+}
+.menu .h2{
+    font-size: 38px;
+    margin: 30px;
+    text-transform: uppercase;
+}
+.menu_bar {
+    display: flex;
+    justify-content: center;
+    margin: 2px 6%;
+}
+/* .menu_bar a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 22px;
+    margin: 6px;
+} */
+.menu_bar button{
+    margin: 6px;
+    padding: 6px 22px;
+    font-size: 15px;
+    border: none;
+    font-size: 20px;
+    background-color: #5a0e0e12;
+    cursor: pointer;
+}
+.menu_bar button:hover{
+    background-color: #03666684;
+    color: #000000;
+    transition: 0.4s;
+}
+.menu_bar button:focus{
+    background-color: #036666;
+    color: #ffffff;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 50px 140px;
+}
+
+.recipes .rec {
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+    
+}
+
+.recipes .r_menu {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    
+}
+
+.recipes .r_menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+
+}
+
+.recipes h3 {
+    margin: 10px 15px 5px;
+    color: #000000;
+    font-size: 30px;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    font-weight: 500;
+}
+
+.recipes p {
+    margin: 0 15px 15px;
+    font-size: 15px;
+    color: gray;
+}

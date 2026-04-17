@@ -1,0 +1,127 @@
+.contact{
+    box-sizing:border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(to right,#0366663a 50%,#036666 50%);
+}
+.container{
+    position: relative;
+    width: 900px;
+    min-height: 260px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    background: #fff;
+ }
+.contactForm{
+    padding: 20px;
+    padding-left: 40px;
+}
+.contactForm h4{
+    font-size: 40px;
+    padding-left: 8px;
+}
+.contactForm p{
+    padding:5px;
+    padding-left: 9px;
+    color: rgba(0, 0, 0, 0.423);
+}
+.contactForm form{
+    padding: 5px;
+}
+.contactForm input[type="text"],.contactForm textarea{
+    width: 90%;
+    padding: 7px;
+    margin: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#0366660d ;
+    border-radius: 3px;
+    border: none;
+}
+.contactForm button{
+    margin: 5px;
+    width: 100px;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 0;
+    border: none;
+    background-color: #036666;
+    color: #fff;
+    font-size: 16px;
+}
+.container .contactInfo{
+    position: relative;
+    top:15px;
+    left: 30px;
+    width:260px;
+    height:300px;
+    text-align: center;
+    background: #036666;
+    color: #ffffffc0;
+    padding: 10px;
+    padding-left: 15px;
+}
+.contactInfo h4{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+.contactInfo h3{
+    font-size: 13px;
+    color: #fff;
+}
+.contactInfo p{
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+/* For the alert */
+.send_button{
+    display:none;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.38);
+    justify-content: center;
+    align-items:center ;
+}
+.sendButtonContent{
+    background-color: white;
+    padding: 20px;
+    margin-left: 130px;
+    margin-top: 0;
+    text-align: center;
+    width: 300px;
+    border-radius: 8px;
+
+}
+.send_button h1{
+    margin-top: 0;
+    font-size: 32px;
+    color: #5a0e0e;
+    padding-top: 11px;
+}
+.send_button p{
+    margin: 10px 0;
+    font-size: 17px;
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.74);
+}
+.send_button button{
+    background-color: rgb(51, 124, 235);
+    border: none;
+    padding: 7px 19px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+}
