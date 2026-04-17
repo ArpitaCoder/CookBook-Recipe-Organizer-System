@@ -6,7 +6,7 @@
         <div class="taskbar">
             <a href="#home">home</a>
             <a href="#recipes">recipes</a>
-            <a href="cuisines.html">cuisines
+            <a href="cuisines/cuisines.php">cuisines
             </a>
             <a href="#contact">contact</a>
         </div>
