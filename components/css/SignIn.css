@@ -75,3 +75,7 @@
     font-size: 26px;
     cursor: pointer;
 }
+#signIn{
+    z-index: 10000 !important; /* Make sure it's on top of EVERYTHING */
+    display: none; /* JS will change this to 'flex' or 'block' */
+}

@@ -8,6 +8,7 @@
     padding: 10px;
     border-radius: 100%;
     cursor: pointer;
+    z-index: 9999;
 }
 .addRecipe .fa-xmark{
     color: #000000;
@@ -69,4 +70,8 @@
 }
 .upload-btn:hover{
     background-color: #036666ba;
+}
+#logIn, #signIn, .addRecipe {
+    z-index: 10000 !important; /* Make sure it's on top of EVERYTHING */
+    display: none; /* JS will change this to 'flex' or 'block' */
 }

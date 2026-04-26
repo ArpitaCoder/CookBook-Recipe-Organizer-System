@@ -14,15 +14,8 @@ session_start();
             <a href="#contact">contact</a>
         </div>
         <div class="log">
-            <?php if(isset($_SESSION['login']) && $_SESSION['login'] == true): ?>
-            <p><?php echo $_SESSION['username']; ?></p>
-            <a href="logout.php"><button>Logout</button></a>
-
-        <?php else: ?>
-
-            <button onclick="showLogIn()">LogIn</button>
-            <button onclick="showSignIn()">SignUp</button>
-
-        <?php endif; ?>
+            <Button onclick="showLogIn()">LogIn</Button>
+            <button onclick="showSignIn()" >SignIn</button>
+        </div>
         </div>
     </header>
