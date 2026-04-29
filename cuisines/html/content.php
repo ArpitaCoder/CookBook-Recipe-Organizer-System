@@ -6,15 +6,15 @@
         </div>
         </div>
     </div>
+
+
+
+    
         </div>
-
-
-
-
         <div class="recDetails" id="recDetails">
         <img id="detailImg" src="img/dalMakhni.jfif" alt="">
         <h1>
-            <span class="I" id="I">D</span><span id="content">al Makhani</span>
+            <span class="I" id="detailI">D</span><span id="detailContent">al Makhani</span>
         </h1>
 
         <p id="desc"></p>

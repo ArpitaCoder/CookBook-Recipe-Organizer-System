@@ -25,7 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (mysqli_query($conn, $sql)) {
             // Using absolute path for redirect is safer as we discussed!
-            echo "<script>alert('Recipe Added to " . ucfirst($category) . "!'); window.location.href='/CookBook-Recipe-Organizer-System/index.php';</script>";
+                            // echo "<script>alert('Recipe Added to " . ucfirst($category) . "!'); window.location.href='/CookBook-Recipe-Organizer-System/index.php';</script>";
+            echo "<script>window.location.href='/CookBook-Recipe-Organizer-System/index.php';</script>";
         } else {
             echo "Error: " . mysqli_error($conn);
         }
