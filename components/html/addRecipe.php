@@ -6,15 +6,24 @@
     <div class="addRecipe_disc">
         <i onclick="closebtn()" class="fa-solid fa-xmark"></i>
         
-        <form action="components/html/saveRecipe.php" method="POST" enctype="multipart/form-data">
+        <form action="/CookBook-Recipe-Organizer-System/components/html/saveRecipe.php" method="POST" enctype="multipart/form-data">
             
             <input type="file" id="fileUpload" name="recipeImage" hidden>
             <label for="fileUpload" class="upload-btn">Upload Image</label>
             
             <input type="text" name="dishName" placeholder="Dish Name" required>
+            <input type="text" name="authorName" placeholder="Author Name" required>
             <textarea name="description" placeholder="Short Description" required></textarea>
             <textarea name="ingredients" placeholder="Ingredients" required></textarea>
             <textarea name="method" placeholder="Cooking Method" required></textarea>
+            <select name="category" required>
+                <option value="indian">Indian</option>
+                <option value="chinese">Chinese</option>
+                <option value="italian">Italian</option>
+                <option value="rice">Rice & Naan</option>
+                <option value="beverages">Beverages</option>
+                <option value="desserts">Desserts</option>
+            </select>
             
             <button type="submit">Save Recipe</button>
         </form>
