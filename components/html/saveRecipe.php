@@ -3,7 +3,7 @@ session_start();
 include_once $_SERVER['DOCUMENT_ROOT'] . '/CookBook-Recipe-Organizer-System/database.php';
 
 if (!isset($_SESSION['login']) || !$_SESSION['login']) {
-    echo "<script>alert('Please log in to add a recipe!'); window.location.href='/CookBook-Recipe-Organizer-System/index.php';</script>";
+    echo "Error: Please log in to add a recipe!";
     exit();
 }
 
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $disc = mysqli_real_escape_string($conn, $_POST['description']);
     $ingredients = mysqli_real_escape_string($conn, $_POST['ingredients']);
     $method = mysqli_real_escape_string($conn, $_POST['method']);
-    $category = mysqli_real_escape_string($conn, $_POST['category']); // Captured here!
+    $category = mysqli_real_escape_string($conn, $_POST['category']);
 
     // 2. Image Handling
     $uploadDir = "../../uploads/"; 
@@ -25,19 +25,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dbPath = "uploads/" . $fileName; 
 
     if (move_uploaded_file($_FILES["recipeImage"]["tmp_name"], $targetPath)) {
-        // 3. Insert into Database (Include category in the list below)
+        // 3. Insert into Database
         $sql = "INSERT INTO recipes (dish_name, author_name, description, ingredients, method, image_path, category, created_at) 
                 VALUES ('$dishName', '$authorName', '$disc', '$ingredients', '$method', '$dbPath', '$category', NOW())";
 
         if (mysqli_query($conn, $sql)) {
-            // Using absolute path for redirect is safer as we discussed!
-                            // echo "<script>alert('Recipe Added to " . ucfirst($category) . "!'); window.location.href='/CookBook-Recipe-Organizer-System/index.php';</script>";
-            echo "<script>window.location.href='/CookBook-Recipe-Organizer-System/index.php';</script>";
+            echo "success";
         } else {
             echo "Error: " . mysqli_error($conn);
         }
     } else {
-        echo "Image upload failed.";
+        echo "Error: Image upload failed.";
     }
 }
 ?>

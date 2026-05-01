@@ -6,7 +6,7 @@
     <div class="addRecipe_disc">
         <i onclick="closebtn()" class="fa-solid fa-xmark"></i>
         
-        <form action="/CookBook-Recipe-Organizer-System/components/html/saveRecipe.php" method="POST" enctype="multipart/form-data">
+        <form id="addRecipeForm" action="/CookBook-Recipe-Organizer-System/components/html/saveRecipe.php" method="POST" enctype="multipart/form-data">
             
             <input type="file" id="fileUpload" name="recipeImage" hidden>
             <label for="fileUpload" class="upload-btn">Upload Image</label>
