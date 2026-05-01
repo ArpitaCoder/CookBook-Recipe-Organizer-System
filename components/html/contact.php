@@ -1,3 +1,4 @@
+<?php include_once 'categories.php'; ?>
 <div class="contact">
         <a name="contact"></a>
         <footer class="site-footer">
@@ -28,11 +29,9 @@
                 </div>
                 <div class="footer-categories">
                     <h5>Categories</h5>
-                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php">Indian</a>
-                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php">Chinese</a>
-                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php">Italian</a>
-                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php">Desserts</a>
-                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php">Beverages</a>
+                    <?php foreach($categories as $key => $label): ?>
+                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php"><?php echo $label; ?></a>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <div class="footer-bottom">

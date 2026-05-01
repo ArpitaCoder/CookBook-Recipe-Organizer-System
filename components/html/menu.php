@@ -1,3 +1,4 @@
+<?php include_once 'categories.php'; ?>
 <div class="menu">
         <a name="recipes"></a>
         <div class="R_title">
@@ -6,12 +7,9 @@
             <span class="line"></span>
         </div>
         <div class="menu_bar">
-            <button id="indian" type="button">Indian</button>
-            <button id="chinese" type="button">Chinese</button>
-            <button id="italian" type="button">Italian</button>
-            <button id="rice" type="button">Rice & Naan</button>
-            <button id="beverages" type="button">Beverages</button>
-            <button id="desserts" type="button">Desserts</button>
+            <?php foreach($categories as $key => $label): ?>
+            <button id="<?php echo $key; ?>" type="button"><?php echo $label; ?></button>
+            <?php endforeach; ?>
         </div>
     </div>
     <div class="recipes" id="homeRecipes"></div>
@@ -29,6 +27,14 @@
                 .catch(err => console.log(err));
         }
 
+        homeRecipesContainer.addEventListener("click", (e) => {
+            let item = e.target.closest(".recipe-item");
+            if (!item) return;
+            let recipeId = item.getAttribute("data-id");
+            localStorage.setItem("openRecipe", recipeId);
+            window.location.href = "cuisines/cuisines.php";
+        });
+
         let menuBar = document.querySelector(".menu_bar");
 
         menuButtons.forEach(btn => {
@@ -42,10 +48,6 @@
                 localStorage.setItem("cuisine", category);
                 window.location.href = "cuisines/cuisines.php";
             });
-        });
-
-        menuBar.addEventListener("mouseleave", () => {
-            loadHomeRecipes("indian");
         });
 
         window.addEventListener("load", () => {

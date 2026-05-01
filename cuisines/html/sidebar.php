@@ -1,3 +1,4 @@
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/CookBook-Recipe-Organizer-System/components/html/categories.php'; ?>
 <div class="container">
     <div class="sidebar">
         <div>
@@ -7,12 +8,9 @@
             <hr>
             <div class="menu">
                 <p class="heading" jid="heading">Categories</p>
-                <button id="indian">Indian</button>
-                <button id="chinese">Chinese</button>
-                <button id="italian">Italian</button>
-                <button id="rice">Rice & Naan</button>
-                <button id="beverages">Beverages</button>
-                <button id="desserts">Desserts</button>
+                <?php foreach($categories as $key => $label): ?>
+                <button id="<?php echo $key; ?>"><?php echo $label; ?></button>
+                <?php endforeach; ?>
             </div>
         </div>
         <div class="s_footer">
@@ -23,9 +21,19 @@
                     <p class="name">Arpita Sharma</p>
                 </div>
                 <div class="home-btn">
-                    <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="/CookBook-Recipe-Organizer-System/index.php"><i class="fa-solid fa-arrow-left"></i></a>
                 </div>
             </div>
         </div>
     </div>
     </div>
+    <script>
+        window.cookbookCategories = [
+            <?php foreach($categories as $key => $label):
+                $first = substr($label, 0, 1);
+                $rest = substr($label, 1);
+            ?>
+            {id: '<?php echo $key; ?>', first: '<?php echo $first; ?>', rest: '<?php echo $rest; ?>'},
+            <?php endforeach; ?>
+        ];
+    </script>

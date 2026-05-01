@@ -1,10 +1,3 @@
-let indian = document.getElementById("indian");
-let chinese = document.getElementById("chinese");
-let italian = document.getElementById("italian");
-let rice = document.getElementById("rice");
-let beverages = document.getElementById("beverages");
-let desserts = document.getElementById("desserts");
-
 function loadRecipes(category, firstLetter, restText) {
     document.getElementById("I").innerText = firstLetter;
     document.getElementById("content").innerText = restText;
@@ -22,31 +15,32 @@ function loadRecipes(category, firstLetter, restText) {
     localStorage.setItem("cuisine", category);
 }
 
-indian.addEventListener("click", () => loadRecipes("indian", "I", "ndian"));
-chinese.addEventListener("click", () => loadRecipes("chinese", "C", "hinese"));
-italian.addEventListener("click", () => loadRecipes("italian", "I", "talian"));
-rice.addEventListener("click", () => loadRecipes("rice", "R", "ice & Naan"));
-beverages.addEventListener("click", () => loadRecipes("beverages", "B", "everages"));
-desserts.addEventListener("click", () => loadRecipes("desserts", "D", "esserts"));
+if (window.cookbookCategories) {
+    window.cookbookCategories.forEach(cat => {
+        let btn = document.getElementById(cat.id);
+        if (btn) {
+            btn.addEventListener("click", () => loadRecipes(cat.id, cat.first, cat.rest));
+        }
+    });
+}
 
 window.onload = function(){
     let cuisine = localStorage.getItem("cuisine");
-    if(cuisine === "indian"){
-        loadRecipes("indian", "I", "ndian");
+    if (window.cookbookCategories && cuisine) {
+        let cat = window.cookbookCategories.find(c => c.id === cuisine);
+        if (cat) {
+            loadRecipes(cat.id, cat.first, cat.rest);
+        }
     }
-    else if(cuisine === "chinese"){
-        loadRecipes("chinese", "C", "hinese");
-    }
-    else if(cuisine === "italian"){
-        loadRecipes("italian", "I", "talian");
-    }
-    else if(cuisine === "rice"){
-        loadRecipes("rice", "R", "ice & Naan");
-    }
-    else if(cuisine === "beverages"){
-        loadRecipes("beverages", "B", "everages");
-    }
-    else if(cuisine === "desserts"){
-        loadRecipes("desserts", "D", "esserts");
+
+    let openRecipeId = localStorage.getItem("openRecipe");
+    if (openRecipeId) {
+        localStorage.removeItem("openRecipe");
+        setTimeout(() => {
+            let item = document.querySelector('.recipe-item[data-id="' + openRecipeId + '"]');
+            if (item) {
+                item.click();
+            }
+        }, 300);
     }
 }

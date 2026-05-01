@@ -29,7 +29,7 @@ if (mysqli_num_rows($result) > 0) {
                 <img src="/CookBook-Recipe-Organizer-System/<?php echo !empty($row['image_path']) ? $row['image_path'] : 'components/img/default-dish.png'; ?>" 
      alt="Recipe Image">
             </div>
-            <h3><?php echo $row['dish_name']; ?></h3>
+            <h3><?php echo ucfirst($row['dish_name']); ?></h3>
             <p><?php echo $row['author_name']; ?> &bull; <?php echo date('M d, Y', strtotime($row['created_at'])); ?></p>
         </div>
         <?php
