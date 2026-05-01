@@ -29,6 +29,10 @@ function openLogIn() {
 }
 
 function AddRecipe() {
+    if (!isLoggedIn) {
+        showSignIn();
+        return;
+    }
     document.getElementById("logIn").style.display = "none";
     document.getElementById("signIn").style.display = "none";
     document.getElementById("addRecipe").style.display = "block";

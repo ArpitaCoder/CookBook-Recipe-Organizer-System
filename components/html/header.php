@@ -14,8 +14,15 @@ session_start();
             <a href="#contact">contact</a>
         </div>
         <div class="log">
-            <Button onclick="showLogIn()">LogIn</Button>
-            <button onclick="showSignIn()" >SignIn</button>
-        </div>
+            <?php if (isset($_SESSION['login']) && $_SESSION['login']): ?>
+                <span style="color:white; margin-right:10px;"><?php echo $_SESSION['username']; ?></span>
+                <button onclick="window.location.href='/CookBook-Recipe-Organizer-System/components/html/logout.php'">Logout</button>
+            <?php else: ?>
+                <Button onclick="showLogIn()">LogIn</Button>
+                <button onclick="showSignIn()" >SignIn</button>
+            <?php endif; ?>
         </div>
     </header>
+<script>
+    var isLoggedIn = <?php echo isset($_SESSION['login']) && $_SESSION['login'] ? 'true' : 'false'; ?>;
+</script>

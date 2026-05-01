@@ -12,7 +12,7 @@
             <label for="fileUpload" class="upload-btn">Upload Image</label>
             
             <input type="text" name="dishName" placeholder="Dish Name" required>
-            <input type="text" name="authorName" placeholder="Author Name" required>
+            <input type="text" name="authorName" placeholder="Author Name" required value="<?php echo isset($_SESSION['username']) ? $_SESSION['username'] : ''; ?>">
             <textarea name="description" placeholder="Short Description" required></textarea>
             <textarea name="ingredients" placeholder="Ingredients" required></textarea>
             <textarea name="method" placeholder="Cooking Method" required></textarea>

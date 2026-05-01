@@ -1,5 +1,11 @@
 <?php
+session_start();
 include_once $_SERVER['DOCUMENT_ROOT'] . '/CookBook-Recipe-Organizer-System/database.php';
+
+if (!isset($_SESSION['login']) || !$_SESSION['login']) {
+    echo "<script>alert('Please log in to add a recipe!'); window.location.href='/CookBook-Recipe-Organizer-System/index.php';</script>";
+    exit();
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 1. Sanitize Data
