@@ -18,14 +18,16 @@
     
 </body>
 <?php 
+session_start();
 include_once $_SERVER['DOCUMENT_ROOT'] . '/CookBook-Recipe-Organizer-System/database.php'; 
 ?> 
-<?php include 'components/html/logIn.php'; ?>
-<?php include 'components/html/SignIn.php'; ?>
-<?php include 'components/html/addRecipe.php'; ?>
 <?php include 'components/html/header.php'; ?>
 <?php include 'components/html/main.php'; ?>
 <?php include 'components/html/menu.php'; ?>
+<?php include 'components/html/contact.php'; ?>
+<?php include 'components/html/logIn.php'; ?>
+<?php include 'components/html/SignIn.php'; ?>
+<?php include 'components/html/addRecipe.php'; ?>
 
 
 <script src="components/JS/logIn_SignIn.js"></script>

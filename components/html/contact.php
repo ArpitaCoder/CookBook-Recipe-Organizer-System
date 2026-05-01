@@ -1,37 +1,41 @@
 <div class="contact">
         <a name="contact"></a>
-        <section>
-            <div class="container">
-                <a name="contact"></a>
-                <div class="contactInfo">
-                    <h4>Contact Info</h4>
-                    <h3>Location</h3>
-                    <p>Lovely Proffesional University,Jalandhar</p>
-                    <h3>Booking Request</h3>
-                    <p>XXX-XXX-XXXX</p>
-                    <!-- Chanje -->
-                     <!-- change this
-                      cjnjkhjk
-                      lkkjkjl
-                      jlkjlkj
-                      kl;kl;k;lkl;k;
-                      mlkmlk -->
-                    <h3>Timing</h3>
-                    <p>Monday to Sunday</p>
-                    <p>11:00am - 10:30pm </p>
-
-
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h4>CookBook</h4>
+                    <p>Discover, Cook & Share</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
                 </div>
-                <div class="contactForm">
-                    <h4>Send us a Message</h4>
-                    <p>if you have any type of quries related to our restraunt,you can send us a message from here.It's our pleasure to help you. </p>
-                    <form>
-                    <input type="text" placeholder="Enter Your Name">
-                    <input type="text"placeholder="Enter Your Email Address" >
-                    <textarea rows="3" placeholder="Write your Message"></textarea>
-                    <br> 
-                    <button onclick="send()">Send Now</button>
-                    </form>
+                <div class="footer-contact">
+                    <h5>Contact</h5>
+                    <p><i class="fa-solid fa-envelope"></i> hello@cookbook.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-98765-43210</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Jalandhar, Punjab</p>
+                    <p><i class="fa-solid fa-clock"></i> Mon - Sun: 9AM - 10PM</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <a href="/CookBook-Recipe-Organizer-System/index.php">Home</a>
+                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php">Cuisines</a>
+                    <a href="/CookBook-Recipe-Organizer-System/index.php#recipes">Recipes</a>
+                    <a href="#" onclick="AddRecipe(); return false;">Add Recipe</a>
+                </div>
+                <div class="footer-categories">
+                    <h5>Categories</h5>
+                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php">Indian</a>
+                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php">Chinese</a>
+                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php">Italian</a>
+                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php">Desserts</a>
+                    <a href="/CookBook-Recipe-Organizer-System/cuisines/cuisines.php">Beverages</a>
                 </div>
             </div>
-        </section>
+            <div class="footer-bottom">
+                <p> CookBook. All rights reserved.</p>
+            </div>
+        </footer>
