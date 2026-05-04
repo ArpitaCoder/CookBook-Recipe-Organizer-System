@@ -107,4 +107,38 @@ header button{
 .logout-btn:hover {
     background-color: rgba(255,255,255,0.25) !important;
     border-color: white !important;
+}
+
+/* Responsive header adjustments */
+@media screen and (max-width: 768px) {
+    .taskbar {
+        width: auto;
+        padding: 5px 0;
+        gap: 5px;
+    }
+    
+    .taskbar a {
+        padding: 8px 12px;
+        font-size: 15px;
+        text-transform: none;
+    }
+    
+    .log {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .taskbar {
+        padding: 3px 0;
+    }
+    
+    .taskbar a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+    
+    .log {
+        margin-right: 5px;
+    }
 } 

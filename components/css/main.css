@@ -53,3 +53,66 @@ main i {
     transform: translateY(-50%);
     color: #777;
 }
+
+/* Responsive main adjustments */
+@media screen and (max-width: 768px) {
+    main {
+        height: 500px;
+    }
+    
+    main .Disc {
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+    }
+    
+    main h1 {
+        font-size: 50px;
+    }
+    
+    main .p1 {
+        font-size: 20px;
+    }
+    
+    main input {
+        width: 280px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    
+    main i {
+        left: 15%;
+        top: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        height: 400px;
+    }
+    
+    main .Disc {
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+    
+    main h1 {
+        font-size: 40px;
+    }
+    
+    main .p1 {
+        font-size: 17px;
+    }
+    
+    main input {
+        width: 220px;
+        margin-top: 20px;
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+    
+    main i {
+        left: 12%;
+        top: 75%;
+    }
+}

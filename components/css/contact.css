@@ -76,3 +76,47 @@
     font-size: 12px;
     opacity: 0.7;
 }
+
+/* Responsive footer adjustments */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 20px;
+    }
+    
+    .footer-container > div {
+        flex: none;
+        width: 100%;
+    }
+    
+    .footer-brand h4 {
+        font-size: 20px;
+    }
+    
+    .footer-contact p,
+    .footer-links a,
+    .footer-categories a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-footer {
+        padding: 20px 15px 12px;
+    }
+    
+    .footer-container {
+        gap: 20px;
+    }
+    
+    .footer-brand h4 {
+        font-size: 18px;
+    }
+    
+    .footer-contact p,
+    .footer-links a,
+    .footer-categories a {
+        font-size: 11px;
+    }
+}
